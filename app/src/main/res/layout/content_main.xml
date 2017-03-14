@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.cn.tfl.boucemenu.BouncingView
+        android:id="@+id/bv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bouncing_menu_height"
+        android:layout_gravity="bottom" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layoutAnimation="@anim/rv_layout_animation"
+        android:layout_height="wrap_content" />
+
+
+</FrameLayout>
